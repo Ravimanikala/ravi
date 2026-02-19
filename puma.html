@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma India Official | Sports & Lifestyle</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+
+        /* Top banner */
+        .top-banner {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            margin-right: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav a.sale {
+            color: #ba181b;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-right input {
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            outline: none;
+            width: 200px;
+        }
+
+        /* Hero section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            background: url('https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_750/global/195337/01/sv01/fnd/IND/fmt/png/RS-X-Efekt-Luxe-Sneakers')
+                        no-repeat center center / cover;
+            display: flex;
+            align-items: flex-end;
+            padding: 60px;
+        }
+
+        .hero-content {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            max-width: 450px;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin: 0 0 10px;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-buttons button {
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        /* Products section */
+        .products {
+            padding: 60px 40px;
+        }
+
+        .products h2 {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            cursor: pointer;
+        }
+
+        .product-image {
+            background-color: #f4f4f4;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .product-image img {
+            max-width: 90%;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #fff;
+            padding: 2px 8px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .product-info {
+            padding: 15px 0;
+        }
+
+        .product-info h3 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .product-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 60px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        footer h4 {
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        footer input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        FREE SHIPPING ON ALL ORDERS | EXTRA 10% OFF ON PREPAID ORDERS
+    </div>
+
+    <header>
+        <div style="display:flex; align-items:center;">
+            <svg height="30" width="60" viewBox="0 0 100 100">
+                <path d="M10 80 Q 40 10, 90 40 L 80 50 Q 40 30, 20 80 Z" fill="black"/>
+            </svg>
+
+            <nav style="margin-left:40px;">
+                <a href="#">New</a>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Kids</a>
+                <a href="#" class="sale">Sale</a>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <input type="text" placeholder="Search">
+            <span>❤️</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>FOREVER. FASTER.</h1>
+            <p>Step into the future of performance and style. Explore the latest RS-X collection.</p>
+            <div class="hero-buttons">
+                <button>Shop Men</button>
+                <button>Shop Women</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Recommended for You</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/377048/01/fnd/IND/fmt/png/Redon-Move-Unisex-Sneakers">
+                    <div class="badge">NEW</div>
+                </div>
+                <div class="product-info">
+                    <h3>Redon Move Unisex Sneakers</h3>
+                    <p>₹4,999</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/195337/01/fnd/IND/fmt/png/RS-X-Efekt-Luxe-Sneakers">
+                </div>
+                <div class="product-info">
+                    <h3>RS-X Efekt Luxe</h3>
+                    <p>₹10,999</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/389274/01/fnd/IND/fmt/png/Smashic-Unisex-Sneakers">
+                </div>
+                <div class="product-info">
+                    <h3>Smashic Unisex Sneakers</h3>
+                    <p>₹3,499</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/107163/01/fnd/IND/fmt/png/FUTURE-Ultimate-FG/AG-Football-Boots">
+                </div>
+                <div class="product-info">
+                    <h3>FUTURE Ultimate Football Boots</h3>
+                    <p>₹9</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h4>Support</h4>
+            <p>Contact us</p>
+            <p>Shipping and Delivery</p>
+            <p>Return Policy</p>
+            <p>Privacy Policy</p>
+        </div>
+
+        <div>
+            <h4>About Puma</h4>
+            <p>Company</p>
+            <p>Corporate News</p>
+            <p>Careers</p>
+            <p>Sustainability</p>
+        </div>
+
+        <div>
+            <h4>Newsletter</h4>
+            <p>Sign up to get the latest news and offers.</p>
+            <input type="email" placeholder="Email Address">
+        </div>
+    </footer>
+
+</body>
+</html>
